@@ -1,0 +1,10 @@
+name: Using self hosted runners
+
+on: push
+
+jobs:
+  init:
+    runs-on: self-hosted
+    steps:
+    - run: echo 'test self hosted runners'
+    - run: echo $HOSTNAME
